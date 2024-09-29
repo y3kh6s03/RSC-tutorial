@@ -1,8 +1,10 @@
 import { css } from '@emotion/react';
 
-export const app = css({
+export const main = css({
   width: '100vw',
   heiht: '100dvh',
   display: 'flex',
-  justifyContent: 'center'
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
 });

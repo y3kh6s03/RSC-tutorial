@@ -1,9 +1,12 @@
-import { QueryClientProvider } from '@tanstack/react-query';
-import { app } from './App.style';
+import { main } from './App.style';
 import Button from './common/button/button';
-import { queryClient } from './utils/query-client';
+import Content, { SportLeague } from './common/content/content';
+import { useState } from 'react';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from './utils/query-client.ts';
 
 function App() {
+  const [sportsLeagues, setSportsLeagues] = useState<SportLeague[]>([]);
   return (
     <div css={main}>
       <QueryClientProvider client={queryClient}>
