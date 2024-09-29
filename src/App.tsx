@@ -1,9 +1,12 @@
+import { app } from "./App.style"
+import Button from "./common/button/button"
+
 function App() {
 
   return (
-    <h1>
-      RSC Tutorial
-    </h1>
+    <div css={app}>
+      <Button/>
+    </div>
   )
 }
 
