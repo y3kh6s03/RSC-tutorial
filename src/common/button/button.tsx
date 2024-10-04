@@ -28,6 +28,8 @@ const Button: FC<ButtonProps> = ({ sportsLeagues, setSportsLeagues }) => {
     <>
       <button onClick={handleClick} css={button}>
         Get Sports
+        <span>これだけを反映させたい
+        </span>
       </button>
     </>
   );
