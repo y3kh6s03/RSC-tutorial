@@ -15,6 +15,7 @@ type ContentProps = {
 const Content: FC<ContentProps> = ({ sportsLeagues }) => {
   return (
     <div>
+      <h2>sports league list commit 2</h2>
       {sportsLeagues.map((sportsLeague) => {
         return (
           <div key={sportsLeague.idLeague} css={content}>
